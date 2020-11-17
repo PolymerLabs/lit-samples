@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lit Starter Samples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap"
+      />
+    </noscript>
+    <script>
+      var isIE = !!window.MSInputMethodContext && !!document.documentMode;
+      var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+      if (isIE || isFirefox) {
+        var stylesheets = document.querySelectorAll('link[rel="preload"]');
+        stylesheets.forEach(function (stylesheet) {
+          pageStylesheet.onload = null;
+          pageStylesheet.rel = 'stylesheet';
+        });
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Google Sans', Roboto, Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.25rem;
+      }
+
+      .top-bar {
+        margin-top: 0;
+        background-color: rgb(33, 150, 243);
+        color: white;
+        padding: 1rem 1rem;
+        width: 100vw;
+        box-sizing: border-box;
+      }
+
+      h2, a {
+        color: rgb(33, 150, 243);
+        text-decoration: none;
+      }
+
+      .content {
+        padding: 0 1rem;
+        min-width: 90vw;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="top-bar">Lit Starter Samples</h1>
+    <section class="content">
+      <header>
+        <p>
+          This page is a quick list of a bunch of code samples to get you
+          started with
+          <a href="https://lit-element.polymer-project.org/">Lit</a> if you're
+          new to it!
+        </p>
+      </header>
+      <article>
+        <h2>Templating</h2>
+        <ul>
+          <li><a href="javascript:null">binding</a></li>
+          <li><a href="javascript:null">events</a></li>
+          <li><a href="javascript:null">repeats</a></li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Topic 2</h2>
+        <ul>
+          <li><a href="javascript:null">asdf</a></li>
+        </ul>
+      </article>
+    </section>
+  </body>
+</html>
