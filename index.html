@@ -48,11 +48,12 @@
         box-sizing: border-box;
       }
 
-      h2, a {
+      h2,
+      a {
         color: rgb(33, 150, 243);
         text-decoration: none;
       }
-      
+
       a:hover {
         text-decoration: underline;
       }
@@ -62,6 +63,14 @@
         min-width: 90vw;
         box-sizing: border-box;
       }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      ul + li {
+        margin-top: 16px;
+      }
     </style>
   </head>
   <body>
@@ -69,25 +78,95 @@
     <section class="content">
       <header>
         <p>
-          This page is a quick list of a bunch of code samples to get you
-          started with
+          This page is a quick list of code samples to get you started with
           <a href="https://lit-element.polymer-project.org/">Lit</a> if you're
           new to it!
         </p>
       </header>
+
       <article>
-        <h2>Templating</h2>
+        <h2>Rendering & Templating</h2>
         <ul>
-          <li><a href="javascript:null">binding</a></li>
-          <li><a href="javascript:null">events</a></li>
-          <li><a href="javascript:null">repeats</a></li>
+          <li>
+            <a
+              href="https://stackblitz.com/edit/lit-html-list-separator?file=src/index.js"
+              >List Separators in lit-html</a
+            >
+          </li>
+          <ul>
+            <li>How to add commas between list items with `Array.map`.</li>
+          </ul>
+
+          <li>
+            <a
+              href="https://stackblitz.com/edit/lit-element-npm-info?file=src%2Fnpm-info.js"
+              >Async Task / NPM Info element</a
+            >
+          </li>
+          <ul>
+            <li>
+              Shows an example of an async Task controller. This one fetches npm
+              package info and renders based on the state of the fetch.
+            </li>
+          </ul>
         </ul>
       </article>
 
       <article>
-        <h2>Topic 2</h2>
+        <h2>Lifecycle</h2>
         <ul>
-          <li><a href="javascript:null">asdf</a></li>
+          <li>
+            <a
+              href="https://stackblitz.com/edit/lit-element-getupdatecomplete?file=src/index.js"
+              >_getUpdateComplete()</a
+            >
+          </li>
+          <ul>
+            <li>
+              How to make a parent element wait for an inner child to render.
+            </li>
+          </ul>
+        </ul>
+      </article>
+
+      <article>
+        <h2>Cross-Framework</h2>
+
+        <ul>
+          <li>
+            <a href="https://stackblitz.com/edit/react-chess-board"
+              >&lt;chess-board> element in React</a
+            >
+          </li>
+          <ul>
+            <li>
+              Shows the &lt;chess-board> element,
+              <a
+                href="https://stackblitz.com/edit/lit-element-chessboard?file=index.html"
+                >implemented in LitElement</a
+              >
+              (older implementation), used inside React.
+            </li>
+          </ul>
+          <li>
+            <a
+              href="https://stackblitz.com/edit/lit-element-goo?file=src%2Fgoo-element.js"
+              >LitElement Goo / React Hooks</a
+            >
+          </li>
+          <ul>
+            <li>
+              An example of how to achieve hooks-like "chaining" of reactive
+              values through several stateful transforms using a "controller"
+              pattern.
+              <br />
+              Ported from the React Goo demo
+              <a
+                href="https://codesandbox.io/s/ppxnl191zx?from-embed=&file=/src/index.js"
+                >here</a
+              >.
+            </li>
+          </ul>
         </ul>
       </article>
     </section>
